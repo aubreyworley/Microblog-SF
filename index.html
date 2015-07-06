@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link rel="stylesheet" href="custom.css">
+      <link rel="stylesheet" href="style.css">
       <script type="text/javascript" src="script.js"></script>
       
       <title>Microblog</title>
@@ -30,16 +30,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#"> Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Notifications</a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search Stories">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">User Profile</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -60,55 +60,104 @@
     <a href="http://imgur.com/o1VMrS5"><img src="http://i.imgur.com/o1VMrS5.jpg" title="source: imgur.com" /></a>
     <h1>San Francisco Serenades</h1>
     <p>Our City. Our People. Our Stories.</p>
- </div>
+</div>
+
+ <div class="container">
+    <div class="row">
+      <div class="darBG col-sm-12 text-center"> 
+        
+        <p>San Francisco is a small, yet explosive 7x7 city. Within each district, each mile, each block lies unique culture, food, people and stories. It can be overwhelming, breathtaking, invigorating, eye opening, lonely, inclusive, scary, comforting, wretched, and magnificent all at the same time. It is a home for the artists, the musicians, the tourists, the hippies, the soul-searchers, the techies, the immigrants and everyone in between. It is a community working towards a greater future with individuals all fighting to survive, embrace, and love the magical City by the Bay. The constant, enthralling struggle to survive and thrive in the city, is what gives all San Franciscans a commonality no matter where they're from. San Francisco Serenades is a microblog that offers an online community platform for the people of SF to tell their stories: the good, the bad, the ugly, the beautiful.</p>
+  </div>
   
   <div class="container">
     <div class="row">
-      <div class="darBG col-sm-12"> 
+      <div class="darBG col-sm-12 text-center"> 
         <h1>Posts</h1>
         <p>Add your stories!</p>
-        <a href="#" class="thumbnail">
-      <img src="..." alt="...">
+  </div>
 
-      </a> 
+<div id="add-post-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title">Add New Story</h2>
       </div>
+      <div class="modal-body">
+        <div class="bold">
+          Title
+        </div>
+        <div class="margin-top-20">
+          <input id="title" type="text" class="form-control" />
+        </div>
+        <div class="bold margin-top-20">
+          Author
+        </div>
+     </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="save-story" type="button" class="btn btn-primary">Save Story</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--/Add Book Modal-->
+
+
+
+
+<div class="detailBox">
+    <div class="titleBox">
+      <label>Comment Box</label>
+        <button type="button" class="close" aria-hidden="true">&times;</button>
+    </div>
+    <div class="commentBox">
+        
+        <p class="taskDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="actionBox">
+        <ul class="commentList">
+            <li>
+                <div class="commenterImage">
+                  <img src="http://lorempixel.com/50/50/people/6" />
+                </div>
+                <div class="commentText">
+                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+
+                </div>
+            </li>
+            <li>
+                <div class="commenterImage">
+                  <img src="http://lorempixel.com/50/50/people/7" />
+                </div>
+                <div class="commentText">
+                    <p class="">Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
+
+                </div>
+            </li>
+            <li>
+                <div class="commenterImage">
+                  <img src="http://lorempixel.com/50/50/people/9" />
+                </div>
+                <div class="commentText">
+                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Your comments" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
      
 
-
-      
-
-    <form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-4">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-4">
-            <textarea class="form-control" rows="4" name="message"></textarea>
-        </div>
-    </div>
-  
-    </div>
-    <div class="form-group">
-        <div class="col-sm-4 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-4 col-sm-offset-2">
-            <! Will be used to display an alert to the user>
-        </div>
-    </div>
-</form>
 
 <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -123,10 +172,10 @@
   <script type="text/javascript" src="script.js"></script>
 
   <!-- underscore template -->
-  <script type="text/template" id="todo-template">
-    <div class="todo">
+  <script type="text/template" id="post-template">
+    <div class="post">
       <p>
-        <span class="todo-text"><%= name %> - <%= desc %></span>
+        <span class="post-text"><%= post %> </span>
         &nbsp;
         <button type="button" class="close delete" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </p>
