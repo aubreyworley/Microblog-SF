@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="custom.css">
+      <script type="text/javascript" src="script.js"></script>
+      <title>Microblog</title>
+</head>
+
+  <body>
+     <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+    <div role ="search">
+      <form class="t1-form form-search js-search-form" action="/search" id="global-nav-search">
+        <label class="visuallyhidden" for="search-query"></label>
+        <input class="search-input" type="text" id="search-query" placeholder="Search Stories" name="q" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-1">
+      <span class="search-icon js-search-action">
+        <button type="submit" class="Icon Icon--search nav-search" tabindex="-1">
+        
+          <span class="visuallyhidden"></span>
+        </button>
+    </span>
+        
+
+      <div role="listbox" class="dropdown-menu typeahead" id="typeahead-dropdown-1">
+  <div aria-hidden="true" class="dropdown-caret">
+    <div class="caret-outer"></div>
+    <div class="caret-inner"></div>
+  </div>
+  <div role="presentation" class="dropdown-inner js-typeahead-results"><div role="presentation" class="typeahead-recent-searches block0">
+  <h3 id="recent-searches-heading" class="typeahead-category-title recent-searches-title" style="display: none;">Recent searches</h3><button type="button" tabindex="-1" class="btn-link clear-recent-searches" style="display: none;">Clear All</button>
+  <ul role="presentation" class="typeahead-items recent-searches-list"></ul>
+</div><div role="presentation" class="typeahead-saved-searches block1">
+  <h3 id="saved-searches-heading" class="typeahead-category-title saved-searches-title" style="display: none;">Saved searches</h3>
+  <ul role="presentation" class="typeahead-items saved-searches-list"></ul>
+</div><ul role="presentation" class="typeahead-items typeahead-topics block2" style="display: none;"></ul><ul role="presentation" class="typeahead-items typeahead-accounts social-context js-typeahead-accounts block3" style="display: none;">
+  
+  
+  <li role="presentation" class="js-selectable typeahead-accounts-shortcut js-shortcut"><a role="option" class="js-nav" href="" data-search-query="" data-query-source="typeahead_click" data-shortcut="true" data-ds="account_search" id="typeahead-item-0"></a></li>
+</ul></div>
+</div>
+
+  </form>
+
+
+
+
+
+
+
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Background</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Projects</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+  
+  <div class="jumbotron text-center">
+  <h1>San Francisco Serenades</h1>
+  <p>Your City. Your People. Your Stories. </p>
+</div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="darBG col-sm-12"> 
+        <h1>Posts</h1>
+        <p>Add your stories!</p>
+        <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+      </a> 
+      </div>
+     
+
+
+      
+
+    <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-4">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-4">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+        </div>
+    </div>
+  
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>
+</form>
+
+<!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- underscore -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- underscore template -->
+  <script type="text/template" id="todo-template">
+    <div class="todo">
+      <p>
+        <span class="todo-text"><%= name %> - <%= desc %></span>
+        &nbsp;
+        <button type="button" class="close delete" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </p>
+      <hr>
+    </div>
+  </script>
+
+</body>
+</html>
