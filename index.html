@@ -6,7 +6,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <link rel="stylesheet" href="style.css">
-      <script type="text/javascript" src="script.js"></script>
       
       <title>Microblog</title>
   </head>
@@ -73,10 +72,14 @@
     <div class="row">
       <div class="darBG col-sm-12 text-center"> 
         <h1>Posts</h1>
-        <p>Add your stories!</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addPostModal">
+           Add Your Stories!
+        </button>
   </div>
 
-<div id="add-post-modal" class="modal fade">
+
+<div id="addPostModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -84,20 +87,19 @@
         <h2 class="modal-title">Add New Story</h2>
       </div>
       <div class="modal-body">
-        <div class="bold">
-          Title
-        </div>
+        <div class="bold"> Your District</div>
         <div class="margin-top-20">
-          <input id="title" type="text" class="form-control" />
+          <input id="title" type="text" class="form-control"/>
         </div>
-        <div class="bold margin-top-20">
-          Author
+        <div class="bold margin-top-20">Your Story </div>
+        <div class="margin-top-20">
+          <input id="title" type="text" class="form-control"/>
         </div>
-     </div>
       </div>
+    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button id="save-story" type="button" class="btn btn-primary">Save Story</button>
+        <button id="saveStory" type="button" class="btn btn-primary">Save Story</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -159,9 +161,9 @@
      
 
 
-<!-- jquery -->
+  <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+      
   <!-- bootstrap js -->
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 

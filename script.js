@@ -1,3 +1,25 @@
+$(function() {
+
+  var $saveStory = $("#saveStory");
+  console.log($saveStory);
+
+  $saveStory.on('click', function(event) {
+    event.preventDefault();
+    console.log("submitted");
+  })
+
+
+
+
+
+
+});
+
+
+
+
+
+
 function SF(post) {
   this.post = post;
 }
